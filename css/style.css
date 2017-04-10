@@ -1,0 +1,88 @@
+.album-cover
+{
+	height: 148px;
+	margin-bottom: 10px;
+	border: 5px solid gray;
+}
+
+.album-cover img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.photo
+{
+	height: 148px;
+	margin-bottom: 10px;
+}
+
+.photo img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.single-photo img
+{
+	width: 100%;
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.Main-Menu ul
+{
+	list-style: none;
+	margin: 0px;
+}
+
+.Main-Menu ul li
+{
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #34495E;
+	width: 150px;
+	border-right: 5px solid #BDC3C7;
+	border-top: 1px solid #BDC3C7;
+	padding: 15px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s
+}
+
+.Main-Menu ul li:hover
+{
+	background-color: #2ECC71;
+}
+
+.Main-Menu > ul > li
+{
+	border-right: 5px solid #BDC3C7;
+}
+
+.Main-Menu ul ul
+{
+	transition: all 0.3s;
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	left: 76%;
+	top: -2%;
+}
+
+.Main-Menu ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.Main-Menu ul li:hover > ul /*không duoc su dung khoang trang truoc hover*/
+{
+	opacity: 1;
+	visibility: visible;
+}
