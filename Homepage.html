@@ -4,24 +4,64 @@
 	<head>
 		<meta charset = "utf-8">
 		<title> Website Lab01 1412274 - 1412316 </title>
-		
+
 		<link rel = "stylesheet" href = "css/bootstrap.css">
 		<script src="js/jquery-3.2.0.min.js"> </script>
 		<script src="js/bootstrap.min.js"> </script>
 		<link rel = "stylesheet" href = "css/style.css">
 		<link rel = "stylesheet" href = "css/font-awesome.css">
+
+		<style>
+		@media (max-width: 992px)
+    {
+      .navbar-header {
+          float: none;
+      }
+      .navbar-left,.navbar-right {
+          float: none !important;
+      }
+      .navbar-toggle {
+          display: block;
+      }
+      .navbar-collapse {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-fixed-top {
+          top: 0;
+          border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+          display: none!important;
+      }
+      .navbar-nav {
+          float: none!important;
+          margin-top: 7.5px;
+      }
+      .navbar-nav>li {
+          float: none;
+      }
+      .navbar-nav>li>a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+      .collapse.in{
+          display:block !important;
+      }
+    }
+		</style>
 	</head>
 
 	<body>
 	<!-- Tạo navigation bar -->
-		<nav class = "nav navbar-default">
+		<nav class = "nav navbar-inverse">
 			<!-- Tạo button hiển thị menu -->
-			<div class = "container">
+			<div class = "container-fluid">
 				<div class = "navbar-header">
 					<button type = "button"
 						class = "navbar-toggle collapsed"
-						data-toggle="collapse" 
-						data-target="#main-nav" 
+						data-toggle="collapse"
+						data-target="#main-nav"
 						aria-expanded="false"
 						name = "button">
 						<span class="sr-only"> </span>
@@ -29,9 +69,9 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class = "narbar-brand" href = "#"> <img src = "image/5.png"> </a>
+					<a class = "narbar-brand" href = "#"> <img src = "image/Logo.jpg"> </a>
 				</div>
-			
+
 				<div class = "collapse navbar-collapse" id = "main-nav"> <!-- Menu hiện ra khi to và đóng lại khi nhỏ -->
 					<ul class = "nav navbar-nav">
 						<li class = "active"> <a href = "Homepage.html"> Home </a> </li>
@@ -42,39 +82,52 @@
 				</div>
 			</div>
 		</nav>
-		<h1> Homepage </h1>
-		
+
 		<!-- Tạo left menu -->
-		<div class = "Main-Menu">
-			<ul>
-				<li> <a href = ""> <span class = "fa fa-home"> </span> Home </a> </li>
-				<li> <a href = ""> <span class = "fa fa-users"> </span> Users </a> 
-					<ul>
-						<li> <a href = ""> <span class = "fa fa-plus"> </span> Add </a> </li>
-						<li> <a href = ""> <span class = "fa fa-edit"> </span> Edit </a> </li>
-						<li> <a href = ""> <span class = "fa fa-remove"> </span> Delete </a> </li>
-					</ul>
-				</li>
-				<li> <a href = ""> <span class = "fa fa-desktop"> </span> Web Design </a> </li>
-				<li> <a href = ""> <span class = "fa fa-database"> </span> Database </a> </li>
-				<li> <a href = ""> <span class = "fa fa-home"> </span> Contact Us </a> </li>
-			</ul>
-		</div>
-		
+		<div class="col-sm-2 navbar-nav text-center">
+			<div class = "Main-Menu">
+				<h3>Side Menu</h3>
+				<ul>
+					<li> <a href = ""> <span class = "fa fa-home"> </span> Home </a> </li>
+					<li> <a href = ""> <span class = "fa fa-users"> </span> Users </a>
+						<ul>
+							<li> <a href = ""> <span class = "fa fa-plus"> </span> Add </a> </li>
+							<li> <a href = ""> <span class = "fa fa-edit"> </span> Edit </a> </li>
+							<li> <a href = ""> <span class = "fa fa-remove"> </span> Delete </a> </li>
+						</ul>
+					</li>
+					<li> <a href = ""> <span class = "fa fa-desktop"> </span> Web Design </a> </li>
+					<li> <a href = ""> <span class = "fa fa-database"> </span> Database </a> </li>
+					<li> <a href = ""> <span class = "fa fa-home"> </span> Contact Us </a> </li>
+				</ul>
+			</div>
+
+
 		<!-- Đếm số lượt xem trang web -->
-		<strong> Số lượt xem </strong>
-		<br>
-		<!-- hitwebcounter Code START -->
-			<a href = "http://www.hitwebcounter.com" target = "_blank">
-				<img src = "http://hitwebcounter.com/counter/counter.php?page=6633678&style=0025&nbdigits=5&type=page&initCount=0" title = "free hits" alt = "free hits" border = "0" >
-			</a>                                        
-		<br/>
-        <!-- hitwebcounter.com -->
-		<a href = "http://www.hitwebcounter.com" title = "Track My Website" target = "_blank" style = "font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 8px; color: #686A6F; text-decoration: none ;">
-		</a>      
-		
+			<strong> Số lượt xem </strong>
+			<br>
+			<!-- hitwebcounter Code START -->
+				<a href = "http://www.hitwebcounter.com" target = "_blank">
+					<img src = "http://hitwebcounter.com/counter/counter.php?page=6633678&style=0025&nbdigits=5&type=page&initCount=0" title = "free hits" alt = "free hits" border = "0" >
+				</a>
+			<br/>
+	        <!-- hitwebcounter.com -->
+			<a href = "http://www.hitwebcounter.com" title = "Track My Website" target = "_blank" style = "font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 8px; color: #686A6F; text-decoration: none ;">
+			</a>
+		</div>
+
+		<!-- Nội dung trang web -->
+		<div class="col-sm-8">
+			<h1>Homepage</h1>
+		</div>
+
+		<!-- Footer của trang web -->
+		<footer class="container-fluid text-center">
+			<p>© Copryright by 1412274-1412316</p>
+		</footer>
+
 		<script src = "js/jquery.min.js" charset = "utf-8"> </script>
 		<script src = "js/bootstrap.js" charset = "utf-8"> </script>
 	</body>
-	
+
 </html>

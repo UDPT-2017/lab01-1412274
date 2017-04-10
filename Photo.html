@@ -4,30 +4,73 @@
 	<head>
 		<meta charset = "utf-8">
 		<title> Website Lab01 1412274 - 1412316 </title>
-		
+
 		<script src="js/jquery-3.2.0.min.js"> </script>
 		<script src="js/bootstrap.min.js"> </script>
 		<link rel = "stylesheet" href = "css/bootstrap.css">
 		<link rel = "stylesheet" href = "css/style.css">
+
+		<style>
+		@media (max-width: 992px)
+		{
+			.navbar-header {
+					float: none;
+			}
+			.navbar-left,.navbar-right {
+					float: none !important;
+			}
+			.navbar-toggle {
+					display: block;
+			}
+			.navbar-collapse {
+					border-top: 1px solid transparent;
+					box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+			}
+			.navbar-fixed-top {
+					top: 0;
+					border-width: 0 0 1px;
+			}
+			.navbar-collapse.collapse {
+					display: none!important;
+			}
+			.navbar-nav {
+					float: none!important;
+					margin-top: 7.5px;
+			}
+			.navbar-nav>li {
+					float: none;
+			}
+			.navbar-nav>li>a {
+					padding-top: 10px;
+					padding-bottom: 10px;
+			}
+			.collapse.in{
+					display:block !important;
+			}
+		}
+		</style>
+
 	</head>
 
 	<body>
-		<nav class = "nav navbar-default">
+		<nav class = "nav navbar-inverse">
 			<!-- Tạo button hiển thị menu -->
-			<div class = "">
-				<button type = "button"
-					class = "navbar-toggle collapsed"
-					data-toggle="collapse" 
-					data-target="#main-nav" 
-					aria-expanded="false"
-					name = "button">
-					<span class="sr-only"> </span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			
+			<div class = "container-fluid">
+				<div class = "navbar-header">
+					<button type = "button"
+						class = "navbar-toggle collapsed"
+						data-toggle="collapse"
+						data-target="#main-nav"
+						aria-expanded="false"
+						name = "button">
+						<span class="sr-only"> </span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class = "narbar-brand" href = "#"> <img src = "image/Logo.jpg"> </a>
+				</div>
+
 			<div class = "collapse navbar-collapse" id = "main-nav"> <!-- Menu hiện ra khi to và đóng lại khi nhỏ -->
 				<ul class = "nav navbar-nav">
 					<li> <a href = "Homepage.html"> Home </a> </li>
@@ -36,7 +79,7 @@
 					<li> <a href = "Blog.html"> Blog </a> </li>
 				</ul>
 			</div>
-		</nav>	
+		</nav>
 		<h1> Photos </h1>
 		<div class = "container">
 			<div class = "row">
@@ -49,12 +92,12 @@
 					<div class = "photo">
 						<img src = "image/2.jpg" alt = "">
 					</div>
-				</div>	
-				<div class = "col-sm-3 col xs-6">	
+				</div>
+				<div class = "col-sm-3 col xs-6">
 					<div class = "photo">
 						<img src = "image/3.png" alt = "">
 					</div>
-				</div>	
+				</div>
 				<div class = "col-sm-3 col xs-6">
 					<div class = "photo">
 						<img src = "image/4.jpg" alt = "">
@@ -65,34 +108,40 @@
 						<img src = "image/5.png" alt = "">
 					</div>
 				</div>
-				<div class = "col-sm-3 col xs-6">	
+				<div class = "col-sm-3 col xs-6">
 					<div class = "photo">
 						<img src = "image/6.png" alt = "">
 					</div>
-				</div>	
+				</div>
 				<div class = "col-sm-3 col xs-6">
 					<div class = "photo">
 						<img src = "image/7.png" alt = "">
 					</div>
-				</div>	
+				</div>
 				<div class = "col-sm-3 col xs-6">
 					<div class = "photo">
 						<img src = "image/8.png" alt = "">
 					</div>
-				</div>	
+				</div>
 				<div class = "col-sm-3 col xs-6">
 					<div class = "photo">
 						<img src = "image/9.png" alt = "">
 					</div>
-				</div>	
+				</div>
 				<div class = "col-sm-3 col xs-6">
 					<div class = "photo">
 						<img src = "image/10.png" alt = "">
-					</div>		
+					</div>
 				</div>
 			</div>
 		</div>
-		
+
+		<!-- Footer của trang web -->
+		<footer class="container-fluid text-center">
+			<p>© Copryright by 1412274-1412316</p>
+		</footer>
+
+
 		<script src = "js/jquery.min.js" charset = "utf-8"> </script>
 		<script src = "js/bootstrap.js" charset = "utf-8"> </script>
 	</body>
