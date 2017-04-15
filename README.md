@@ -3,7 +3,7 @@
 **Name of your app** là một bài tập 1 tại môn UDPT.
 
 Thành viên:
-* [x] **1412316** Tên sinh viên 1 (DangNhatMinh96)
+* [x] **1412316** Đặng Nhật Minh (DangNhatMinh96)
 * [x] **1412274** Tên sinh viên 2 (tên tài khoản github)
 
 URL: **URL hosting của bài tập**
