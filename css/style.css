@@ -1,8 +1,9 @@
 .album-cover
 {
-	height: 148px;
+	height: 200px;
+	width: 200px;
 	margin-bottom: 10px;
-	border: 5px solid gray;
+	border: 3px solid gray;
 }
 
 .album-cover img
@@ -13,7 +14,7 @@
 
 .photo
 {
-	height: 148px;
+	height: 200px;
 	margin-bottom: 10px;
 }
 
@@ -29,10 +30,21 @@
 	height: 100%;
 }
 
+html
+{
+    height: 100%;
+}
+
 body
 {
-	margin: 0px;
-	padding: 0px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column
+}
+
+.content
+{
+  flex: 1;
 }
 
 .Main-Menu ul
@@ -81,19 +93,72 @@ body
 	color: #fff;
 }
 
-.Main-Menu ul li:hover > ul /*không duoc su dung khoang trang truoc hover*/
+.Main-Menu ul li:hover > ul /*khï¿½ng duoc su dung khoang trang truoc hover*/
 {
 	opacity: 1;
 	visibility: visible;
 }
 
-footer
+.footer
 {
-      position: fixed;
-      height: 50px;
-      bottom: 0;
-      width: 100%;
-      padding: 20px;
-      background-color: #555;
-      color: white;
+	height: 50px;
+	padding: 20px;
+	width: 100%;
+	bottom: 0;
+	background-color: #555;
+	color: white;
+}
+
+.btn-blog {
+    color: #ffffff;
+    background-color: #37d980;
+    border-color: #37d980;
+    border-radius:0;
+    margin-bottom:10px
+}
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active,
+.btn-blog.active,
+.open .dropdown-toggle.btn-blog {
+    color: white;
+    background-color:#34ca78;
+    border-color: #34ca78;
+}
+
+@media (max-width: 991px){
+	.navbar-header {
+			float: none;
+	}
+	.navbar-left,.navbar-right {
+			float: none !important;
+	}
+	.navbar-toggle {
+			display: block;
+	}
+	.navbar-collapse {
+			border-top: 1px solid transparent;
+			box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-fixed-top {
+			top: 0;
+			border-width: 0 0 1px;
+	}
+	.navbar-collapse.collapse {
+			display: none!important;
+	}
+	.navbar-nav {
+			float: none!important;
+			margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+			float: none;
+	}
+	.navbar-nav>li>a {
+			padding-top: 10px;
+			padding-bottom: 10px;
+	}
+	.collapse.in{
+			display:block !important;
+	}
 }
