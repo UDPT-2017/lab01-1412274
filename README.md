@@ -4,7 +4,7 @@
 
 Thành viên:
 * [x] **1412316** Đặng Nhật Minh (DangNhatMinh96)
-* [x] **1412274** Tên sinh viên 2 (tên tài khoản github)
+* [x] **1412274** Nguyễn Hoàng Kim (tên tài khoản github)
 
 URL: **URL hosting của bài tập**
 
