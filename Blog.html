@@ -10,6 +10,7 @@
 		<script src="js/bootstrap.min.js"> </script>
 		<link rel = "stylesheet" href = "css/style.css">
 		<link rel = "stylesheet" href = "css/font-awesome.css">
+		<script src = "js/bootstrap.js" charset = "utf-8"> </script>
 
 	</head>
 
@@ -21,16 +22,16 @@
 					<div class = "navbar-header">
 						<button type = "button"
 							class = "navbar-toggle collapsed"
-							data-toggle="collapse"
-							data-target="#main-nav"
-							aria-expanded="false"
+							data-toggle = "collapse"
+							data-target = "#main-nav"
+							aria-expanded = "false"
 							name = "button">
-							<span class="sr-only"> </span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+							<span class = "sr-only"> </span>
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
 						</button>
-						<a class = "narbar-brand" href = "#"> <img src = "image/Logo.jpg"> </a>
+						<a class = "narbar-brand" href = "#"><img src = "image/Logo.jpg"></a>
 					</div>
 
 					<div class = "collapse navbar-collapse" id = "main-nav"> <!-- Menu hiện ra khi to và đóng lại khi nhỏ -->
@@ -43,41 +44,95 @@
 					</div>
 				</div>
 			</nav>
-			<h1><center> Blog </center></h1>
 
-			<div class="col-md-10 col-md-offset-1">
+			<!-- Tạo left menu -->
+			<div class="col-md-2 navbar-nav">
+				<div class = "Main-Menu">
+					<h3>Side Menu</h3>
+					<ul>
+						<li> <a href = ""> <span class = "fa fa-home"> </span> Home </a> </li>
+						<li> <a href = ""> <span class = "fa fa-users"> </span> Users </a>
+							<ul>
+								<li> <a href = ""> <span class = "fa fa-plus"> </span> Add </a> </li>
+								<li> <a href = ""> <span class = "fa fa-edit"> </span> Edit </a> </li>
+								<li> <a href = ""> <span class = "fa fa-remove"> </span> Delete </a> </li>
+							</ul>
+						</li>
+						<li> <a href = ""> <span class = "fa fa-desktop"> </span> Web Design </a> </li>
+						<li> <a href = ""> <span class = "fa fa-database"> </span> Database </a> </li>
+						<li> <a href = ""> <span class = "fa fa-home"> </span> Contact Us </a> </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class = "col-md-9 row">
+				<h1> Blog </h1>
+				<div class = "well">
+					<div class = "media">
+						<a class = "pull-left" href = "#">
+							<img class = "media-object" src= "http://placekitten.com/150/150">
+						</a>
+						<div class = "media-body">
+							<h2 class = "media-heading"> Giới thiệu sơ nét về Oracle </h2>
+							<p class = "text-right"> By HandSomeGuy </p>
+							<p>Oracle Database 12c, cơ sở dữ liệu đầu tiên dành cho Đám mây. Oracle Database 12c là hệ thống cơ sở dữ liệu ...</p>
+							<a class="btn btn-blog pull-right marginBottom10" href="blog/Blog 1.html">READ MORE</a>
+							<ul class="list-inline list-unstyled">
+								<li><span><i class="glyphicon glyphicon-calendar"></i> April 15, 2016 </span></li>
+								<li>|</li>
+								<span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+								<li>|</li>
+								<li>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star-empty"></span>
+									<span class="glyphicon glyphicon-star-empty"></span>
+								</li>
+								<li>|</li>
+								<li>
+									<span><i class="fa fa-facebook-square"></i></span>
+									<span><i class="fa fa-twitter-square"></i></span>
+									<span><i class="fa fa-google-plus-square"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
 				<div class="well">
 					<div class="media">
 						<a class="pull-left" href="#">
-							<img class="media-object" src="http://placekitten.com/150/150">
+							<img class="media-object" src="http://forums.defiance.com/image.php?u=29048208&dateline=1485395823">
 						</a>
 						<div class="media-body">
-							<h2 class="media-heading">Bài viết 1</h2>
-							<p class="text-right">By A</p>
-							<p>Nội dung rút gọn</p>
-								<a class="btn btn-blog pull-right marginBottom10" href="#">READ MORE</a>
-								<ul class="list-inline list-unstyled">
-									<li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
-									<li>|</li>
-									<span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
-									<li>|</li>
-									<li>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star-empty"></span>
-									</li>
-									<li>|</li>
-									<li>
-										<span><i class="fa fa-facebook-square"></i></span>
-										<span><i class="fa fa-twitter-square"></i></span>
-										<span><i class="fa fa-google-plus-square"></i></span>
-									</li>
-								</ul>
-							</div>
+							<h2 class="media-heading">Giới thiệu về NodeJS</h2>
+							<p class="text-right">By anonymous</p>
+							<p>NodeJS là một nền tảng Server side được xây dựng dựa trên Javascript Engine (V8 Engine). Node.js được phát triển bởi Ryan Dahl năm 2009 ...</p>
+							<a class="btn btn-blog pull-right marginBottom10" href="blog/Blog 2.html">READ MORE</a>
+							<ul class="list-inline list-unstyled">
+								<li><span><i class="glyphicon glyphicon-calendar"></i> April 16, 2016 </span></li>
+								<li>|</li>
+								<span><i class="glyphicon glyphicon-comment"></i> 3 comments</span>
+								<li>|</li>
+								<li>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star-empty"></span>
+								</li>
+								<li>|</li>
+								<li>
+									<span><i class="fa fa-facebook-square"></i></span>
+									<span><i class="fa fa-twitter-square"></i></span>
+									<span><i class="fa fa-google-plus-square"></i></span>
+								</li>
+							</ul>
 						</div>
 					</div>
+				</div>
+
 			</div>
 
 		</div>
@@ -87,9 +142,6 @@
 			<p>© Copryright by 1412274-1412316</p>
 		</footer>
 
-
-		<script src = "js/jquery.min.js" charset = "utf-8"> </script>
-		<script src = "js/bootstrap.js" charset = "utf-8"> </script>
 	</body>
 
 </html>

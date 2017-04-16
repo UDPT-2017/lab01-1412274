@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+		<title> Website Lab01 </title>
+
+		<link rel = "stylesheet" href = "../css/bootstrap.css">
+		<script src="../js/jquery-3.2.0.min.js"> </script>
+		<script src="../js/bootstrap.min.js"> </script>
+		<link rel = "stylesheet" href = "../css/style.css">
+		<link rel = "stylesheet" href = "../css/font-awesome.css">
+		<script src = "../js/bootstrap.js" charset = "utf-8"> </script>
+		<link rel = "stylesheet" href = "../css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+		<div class="content">
+			<nav class = "nav navbar-inverse">
+				<!-- Tạo button hiển thị menu -->
+				<div class = "container-fluid">
+					<div class = "navbar-header">
+						<button type = "button"
+							class = "navbar-toggle collapsed"
+							data-toggle="collapse"
+							data-target="#main-nav"
+							aria-expanded="false"
+							name = "button">
+							<span class="sr-only"> </span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class = "narbar-brand" href = "#"> <img src = "../image/Logo.jpg"> </a>
+					</div>
+
+					<div class = "collapse navbar-collapse" id = "main-nav"> <!-- Menu hiện ra khi to và đóng lại khi nhỏ -->
+						<ul class = "nav navbar-nav">
+							<li> <a href = "../Homepage.html"> Home </a> </li>
+							<li> <a href = "../Album.html"> Album </a> </li>
+							<li> <a href = "../About.html"> About </a> </li>
+							<li class = "active"> <a href = "../Blog.html"> Blog </a> </li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="col-md-2 navbar-nav">
+				<div class = "Main-Menu">
+					<h3>Side Menu</h3>
+					<ul>
+						<li> <a href = ""> <span class = "fa fa-home"> </span> Home </a> </li>
+						<li> <a href = ""> <span class = "fa fa-users"> </span> Users </a>
+							<ul>
+								<li> <a href = ""> <span class = "fa fa-plus"> </span> Add </a> </li>
+								<li> <a href = ""> <span class = "fa fa-edit"> </span> Edit </a> </li>
+								<li> <a href = ""> <span class = "fa fa-remove"> </span> Delete </a> </li>
+							</ul>
+						</li>
+						<li> <a href = ""> <span class = "fa fa-desktop"> </span> Web Design </a> </li>
+						<li> <a href = ""> <span class = "fa fa-database"> </span> Database </a> </li>
+						<li> <a href = ""> <span class = "fa fa-home"> </span> Contact Us </a> </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-10">
+				<div class="container">
+					<div class="row">
+						<h2><font color = "#1D6DB2"> Giới thiệu sơ nét về Oracle </font></h2>
+						<div class="body-text">
+							<p class='text-muted'> By HandSomeGuy | April 15, 2016 </p>
+							<br/>
+
+							<div class="col-lg-5">
+								<h2>
+									<strong> Oracle Database 12c là gì? </strong>
+								</h2>
+								<p> Oracle Database 12c, cơ sở dữ liệu đầu tiên dành cho Đám mây. Oracle Database 12c là hệ thống cơ sở dữ liệu đi
+										đầu được thiết kế để đáp ứng những nhu cầu trên, cung cấp hệ thống multitenant trên nền tảng cơ sở dữ liệu an toàn,
+										nhanh chóng, và đáng tin cậy.
+								</p>
+							</div>
+							<div class="col-lg-5">
+								<p class="">
+									<img alt="image" src="http://www.icarus.pt/wp-content/uploads/2015/02/OracleDatabase-01.png" width="70%">
+								</p>
+							</div>
+							<br/>
+
+							<div class="col-lg-10">
+								<h2>
+									<strong> Lí do sử dụng </strong>
+								</h2>
+								<p> Khi truy cập hệ thống dữ liệu Database12c, khách hàng có thể cải thiện chất lượng và hiệu quả của các ứng dụng, do đó
+										tiết kiệm đáng kể thời gian chạy và bộ nhớ hệ thống. Tính năng hợp nhất cơ sở dữ liệu, cho phép quản lý hàng trăm cơ sở
+										dữ liệu như một cơ sở duy nhất.
+								</p>
+							</div>
+							<br/>
+
+							<div class="col-lg-10">
+								<h2>
+									<strong> Cấu trúc </strong>
+								</h2>
+								<p> Với cấu trúc multitenant (máy chủ dịch vụ lưu và quản lý nhiều khách hàng) mới, Oracle Database 12c đơn giản hóa quá trình
+										hợp nhất dữ liệu trên đám mây, cho phép khách hàng quản lý nhiều cơ sở dữ liệu như một mà không cần phải thay đổi các ứng
+										dụng. Là nền tảng của Oracle Public Cloud Services (dịch vụ đám mây công cộng của Oracle), Oracle Database 12c giúp ích cho
+										những khách hàng đang sử dụng đám mây cá nhân và những người cung cấp phần mềm như một dịch vụ (SaaS) đang cần sự hỗ trợ
+										của cơ sở dữ liệu Oracle trong một mô hình multitenant an toàn.
+								</p>
+							</div>
+							<br/>
+
+							<div class="col-lg-10">
+								<h2>
+									<strong> Lợi ích khác </strong>
+								</h2>
+								<p> Ngoài ra, Oracle Database 12c, có khả năng phát huy tối ưu khả năng khi chạy trên máy chủ SPARC và sử dụng bộ xử lý Intel® Xeon®.
+										Đây là phiên bản mới bổ sung thêm 500 tính năng mới và là kết quả sáng tạo của 2.500 năm người nghiên cứu, sau 1,2 triệu giờ chạy
+										thử và hàng loạt chương trình thử nghiệm với khách hàng, đối tác của Oracle.
+								</p>
+							</div>
+							<br/>
+						</div>
+
+						<!--comment box-->
+						<div class="col-md-10">
+							<div class="widget-area no-padding blank">
+								<div class="status-upload">
+									<form>
+										<textarea placeholder="Leave your comment here" ></textarea>
+										<ul>
+											<li>
+												<a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio">
+													<i class="fa fa-music"></i>
+												</a>
+											</li>
+											<li>
+												<a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video">
+													<i class="fa fa-video-camera"></i>
+												</a>
+											</li>
+											<li>
+												<a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Sound Record">
+													<i class="fa fa-microphone"></i>
+												</a>
+											</li>
+											<li>
+												<a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture">
+													<i class="fa fa-picture-o"></i>
+												</a>
+											</li>
+										</ul>
+										<button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+									</form>
+								</div><!-- Status Upload  -->
+							</div><!-- Widget Area -->
+						</div>
+
+						<div class="col-md-10">
+							<h3> User Comment </h3>
+						</div><!-- /col-sm-12 -->
+						<div class="col-md-10">
+							<div class="container">
+								<div class="row">
+									<div class ="col-md-1">
+										<div class="thumbnail">
+											<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+										</div>
+									</div>
+									<div class="col-md-9">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<strong>User 1</strong> <span class="text-muted">commented 5 days ago</span>
+											</div>
+											<div class="panel-body">
+												Great
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--user 2 comment-->
+							<div class="container">
+								<div class ="row">
+									<div class="col-md-1">
+										<div class="thumbnail">
+											<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+										</div>
+									</div>
+									<div class="col-md-9">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<strong>User 2</strong> <span class="text-muted">commented 2 days ago</span>
+											</div>
+											<div class="panel-body">
+												Good
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer của trang web -->
+		<footer class="footer container-fluid text-center">
+			<p>© Copryright by 1412274-1412316</p>
+		</footer>
+
+	</body>
+
+</html>

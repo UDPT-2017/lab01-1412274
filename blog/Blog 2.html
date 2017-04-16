@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+		<title> Website Lab01 </title>
+
+		<link rel = "stylesheet" href = "../css/bootstrap.css">
+		<script src="../js/jquery-3.2.0.min.js"> </script>
+		<script src="../js/bootstrap.min.js"> </script>
+		<link rel = "stylesheet" href = "../css/style.css">
+		<link rel = "stylesheet" href = "../css/font-awesome.css">
+		<script src = "../js/bootstrap.js" charset = "utf-8"> </script>
+		<link rel = "stylesheet" href = "../css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+		<div class="content">
+			<nav class = "nav navbar-inverse">
+				<!-- Tạo button hiển thị menu -->
+				<div class = "container-fluid">
+					<div class = "navbar-header">
+						<button type = "button"
+							class = "navbar-toggle collapsed"
+							data-toggle="collapse"
+							data-target="#main-nav"
+							aria-expanded="false"
+							name = "button">
+							<span class="sr-only"> </span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class = "narbar-brand" href = "#"> <img src = "../image/Logo.jpg"> </a>
+					</div>
+
+					<div class = "collapse navbar-collapse" id = "main-nav"> <!-- Menu hiện ra khi to và đóng lại khi nhỏ -->
+						<ul class = "nav navbar-nav">
+							<li> <a href = "../Homepage.html"> Home </a> </li>
+							<li> <a href = "../Album.html"> Album </a> </li>
+							<li> <a href = "../About.html"> About </a> </li>
+							<li class = "active"> <a href = "../Blog.html"> Blog </a> </li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="col-md-2 navbar-nav">
+				<div class = "Main-Menu">
+					<h3>Side Menu</h3>
+					<ul>
+						<li> <a href = ""> <span class = "fa fa-home"> </span> Home </a> </li>
+						<li> <a href = ""> <span class = "fa fa-users"> </span> Users </a>
+							<ul>
+								<li> <a href = ""> <span class = "fa fa-plus"> </span> Add </a> </li>
+								<li> <a href = ""> <span class = "fa fa-edit"> </span> Edit </a> </li>
+								<li> <a href = ""> <span class = "fa fa-remove"> </span> Delete </a> </li>
+							</ul>
+						</li>
+						<li> <a href = ""> <span class = "fa fa-desktop"> </span> Web Design </a> </li>
+						<li> <a href = ""> <span class = "fa fa-database"> </span> Database </a> </li>
+						<li> <a href = ""> <span class = "fa fa-home"> </span> Contact Us </a> </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-10">
+				<div class="container">
+					<div class="row">
+						<h2><font color = "#1D6DB2"> Giới thiệu về NodeJS </font></h2>
+						<div class="body-text">
+							<p class='text-muted'> By anonymous | April 16, 2016 </p>
+							<br/>
+
+							<div class="col-lg-5">
+								<h2>
+									<strong> NodeJs là gì ? </strong>
+								</h2>
+								<p> NodeJS là một nền tảng Server side được xây dựng dựa trên Javascript Engine (V8 Engine). Node.js được phát triển bởi Ryan Dahl
+										năm 2009 và phiên bản cuối cùng là v0.10.36. </br></br>
+										NodeJs là một mã nguồn mở, đa nền tảng cho phát triển các ứng dụng phía Server và các ứng dụng liên quan đến mạng. Ứng dụng Node.js
+										được viết bằng Javascript và có thể chạy trong môi trường Node.js trên hệ điều hành Window, Linux... </br></br>
+										Node.js cũng cung cấp cho chúng ta các module Javascript đa dạng, có thể đơn giản hóa sự phát triển của các ứng dụng web sử dụng
+										Node.js với các phần mở rộng.
+								</p>
+							</div>
+							<div class="col-lg-5">
+								<p class="">
+									<img alt="image" src="../image/7.png" width="70%">
+								</p>
+							</div>
+							<br/>
+
+							<div class="col-lg-10">
+								<h2>
+									<strong> Đặc điểm của NodeJs </strong>
+								</h2>
+								<p>
+									<ul>
+									<li>
+										<strong>Không đồng bộ và Phát sinh sự kiện (Event Driven):</strong> Tất các các APIs của thư viện Node.js đều không đồng bộ,
+										nghĩa là không blocking (khóa). Nó rất cần thiết vì Node.js không bao giờ đợi một API trả về dự liệu. Server chuyển sang một
+										API sau khi gọi nó và có cơ chế thông báo về Sự kiện của Node.js giúp Server nhận đựa phản hồi từ các API gọi trước đó.
+									</li>
+									</br>
+									<li>
+										<strong>Chạy rất nhanh:</strong> Dựa trên V8 Javascript Engine của Google Chrome, thư viện Node.js rất nhanh trong các quá trình thực hiện code.
+									</li>
+									</br>
+									<li>
+										<strong>Các tiến trình đơn giản nhưng hiệu năng cao:</strong> Node.js sử dụng một mô hình luồng đơn (single thread) với các sự kiện lặp.
+										Các cơ chế sự kiện giúp Server trả lại các phản hồi với một cách không khóa và tạo cho Server hiệu quả cao ngược lại với các cách truyền
+										thống tạo ra một số lượng luồng hữu hạn để quản lý request. Nodejs sử dụng các chương trình đơn luồng và các chương trình này cung cấp
+										các dịch vụ cho số lượng request nhiều hơn so với các Server truyền thống như Apache HTTP Server.
+									</li>
+									</br>
+									<li>
+										<strong>Không đệm:</strong> Ứng dụng Node.js không lưu trữ các dữ liệu buffer.
+									</li>
+									</br>
+									<li>
+										<strong>Có giấy phép:</strong> Node.js được phát hành dựa vào MIT License.
+									</li>
+
+								</ul>
+								</p>
+							</div>
+							<br/>
+
+							<div class="col-lg-10">
+								<h2>
+									<strong> Với NodeJS, bạn phải làm mọi thứ </strong>
+								</h2>
+								<p> Node.js chỉ là một môi trường – điều này có nghĩa bạn tự phải làm mọi thứ. Sẽ chẳng có bất kỳ máy chủ mặc định nào cả !!! Một đoạn script
+										xử lý tất cả các kết nối với Client. Điều này làm giảm đáng kể số lượng tài nguyên được sử dụng trong ứng dụng.
+								</p>
+							</div>
+							<br/>
+
+							<div class="col-lg-10">
+								<h2>
+									<strong> Các thành phần quan trọng trong NodeJS </strong>
+								</h2>
+								<p> Lược đồ dưới đây mô tả các thành phần quan trọng của Node.js:</br>
+										<img src="../image/cautruc.jpg" width ="70%">
+								</p>
+							</div>
+							<br/>
+
+							<div class="col-lg-10">
+								<h2>
+									<strong> NodeJS được sử dụng ở đâu? </strong>
+								</h2>
+								<p>
+									<ul>
+									<li>
+										Các ứng dụng về I/O
+									</li>
+									</br>
+									<li>
+										Các ứng dựng về luồng dữ liệu
+									</li>
+									</br>
+									<li>
+										Các ứng dụng về dữ liệu hướng đến thời gian thực
+									</li>
+									</br>
+									<li>
+										Các ứng dụng dựa vào JSON APIs
+									</li>
+									</br>
+									<li>
+										Các ứng dụng Single Page Application
+									</li>
+
+								</ul>
+								</p>
+							</div>
+							<br/>
+						</div>
+
+						<!--comment box-->
+						<div class="col-md-10">
+							<div class="widget-area no-padding blank">
+								<div class="status-upload">
+									<form>
+										<textarea placeholder="Leave your comment here" ></textarea>
+										<ul>
+											<li>
+												<a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio">
+													<i class="fa fa-music"></i>
+												</a>
+											</li>
+											<li>
+												<a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video">
+													<i class="fa fa-video-camera"></i>
+												</a>
+											</li>
+											<li>
+												<a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Sound Record">
+													<i class="fa fa-microphone"></i>
+												</a>
+											</li>
+											<li>
+												<a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture">
+													<i class="fa fa-picture-o"></i>
+												</a>
+											</li>
+										</ul>
+										<button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+									</form>
+								</div><!-- Status Upload  -->
+							</div><!-- Widget Area -->
+						</div>
+
+						<div class="col-md-10">
+							<h3> User Comment </h3>
+						</div><!-- /col-sm-12 -->
+						<div class="col-md-10">
+							<div class="container">
+								<div class="row">
+									<div class ="col-md-1">
+										<div class="thumbnail">
+											<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+										</div>
+									</div>
+									<div class="col-md-9">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<strong>User 1</strong> <span class="text-muted">commented 2 days ago</span>
+											</div>
+											<div class="panel-body">
+												Great
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--user 2 comment-->
+							<div class="container">
+								<div class ="row">
+									<div class="col-md-1">
+										<div class="thumbnail">
+											<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+										</div>
+									</div>
+									<div class="col-md-9">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<strong>User 2</strong> <span class="text-muted">commented 1 days ago</span>
+											</div>
+											<div class="panel-body">
+												Good
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--user 3 comment-->
+							<div class="container">
+								<div class ="row">
+									<div class="col-md-1">
+										<div class="thumbnail">
+											<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+										</div>
+									</div>
+									<div class="col-md-9">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<strong>User 3</strong> <span class="text-muted">commented 10 minutes ago</span>
+											</div>
+											<div class="panel-body">
+												Can u give me some examples
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer của trang web -->
+		<footer class="footer container-fluid text-center">
+			<p>© Copryright by 1412274-1412316</p>
+		</footer>
+
+	</body>
+
+</html>
